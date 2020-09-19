@@ -17,10 +17,10 @@ permalink: /highlight.js/
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #9C9C9C;
   color: white;
   padding: 16px;
-  font-size: 16px;
+  font: 12px/1.4 Helvetica, Arial, sans-serif;
   border: none;
 }
 
@@ -60,7 +60,6 @@ permalink: /highlight.js/
 .theme-switch-wrapper {
   display: inline-block;
   padding-top: 16px;
-  padding-left: 13em;
   align-items: center;
 
   em {
