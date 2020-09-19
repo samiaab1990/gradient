@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Highlight.js Themes
+title: Gradient Light & Dark Highlight.js Themes
 permalink: /highlight.js/
 ---
 <link rel="stylesheet"
@@ -57,7 +57,7 @@ permalink: /highlight.js/
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 .theme-switch-wrapper {
-  display: flex;
+  display: inline-block;
   align-items: center;
 
   em {
@@ -149,7 +149,6 @@ function switchTheme(e) {
     }    
 }
 </script>
-</div>
 <div class="dropdown">
   <button class="dropbtn">Dropdown</button>
   <div class="dropdown-content">
@@ -157,6 +156,7 @@ function switchTheme(e) {
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
   </div>
+  
 <div class="theme-switch-wrapper">
     <label class="theme-switch" for="checkbox">
         <input type="checkbox" id="checkbox" />
