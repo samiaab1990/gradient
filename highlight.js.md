@@ -13,4 +13,4 @@ permalink: /highlight.js/
  
  <pre><code>
  test
- <pre></code>
+ </pre></code>
