@@ -15,8 +15,9 @@ permalink: /highlight.js/
 <head>
 <style>
 .myDiv {
-  border: 5px outset red;
-  text-align: center;
+  border: 5px #3D3D3E;
+  width: 500 px;
+  height: 500px;
 }
 </style>
 </head>
