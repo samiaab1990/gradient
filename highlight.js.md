@@ -28,7 +28,7 @@ permalink: /highlight.js/
   display: inline-block;
   height: 34px;
   position: relative;
-  width: 60px;
+  width: 80px;
 }
 
 .theme-switch input {
@@ -81,38 +81,21 @@ input:checked + .slider:before {
 }
 </style>
 </head>
+
 <body>
 
 <div class="myDiv">
+
 <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-light.min.css">
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+
   <pre><code>
-  function $initHighlight(block, cls) {
-  try {
-    if (cls.search(/\bno\-highlight\b/) != -1)
-      return process(block, true, 0x0F) +
-             ` class="${cls}"`;
-  } catch (e) {
-    /* handle exception */
-  }
-  for (var i = 0 / 2; i < classes.length; i++) {
-    if (checkCondition(classes[i]) === undefined)
-      console.log('undefined');
-  }
-
-  return (
-    <div>
-      <web-component>{block}</web-component>
-    </div>
-  )
-}
-
-export  $initHighlight;
+#Test 
   </code></pre>
 </div>
-<a href="">Language</a><a href="">
 <script>
 function switchTheme(e) {
     if (e.target.checked) {
@@ -125,12 +108,21 @@ function switchTheme(e) {
     }    
 }
 </script>
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+  </div>
+</div>
 <div class="theme-switch-wrapper">
     <label class="theme-switch" for="checkbox">
         <input type="checkbox" id="checkbox" />
         <div class="slider round"></div>
   </label>
-  <em>Enable Dark Mode!</em>
+  <em>Switch theme</em>
 </div>
 
 </body>
