@@ -15,9 +15,10 @@ permalink: /highlight.js/
 <head>
 <style>
 .myDiv {
-  border: 10px solid #3D3D3E;
-  width: 70%;
-  height: 70%
+  padding: 1em;
+  background: #3D3D3E;
+  width: 30em;
+  border: 1 px solid #3D3D3E;
   
 }
 </style>
@@ -52,6 +53,14 @@ permalink: /highlight.js/
 
 export  $initHighlight;
   </code></pre>
+</div>
+<a href="">Language</a><a href="">
+<div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+  </label>
+  <em>Enable Dark Mode!</em>
 </div>
 
 </body>
