@@ -59,7 +59,8 @@ permalink: /highlight.js/
 
 .theme-switch-wrapper {
   display: inline-block;
-  padding-left: 15em;
+  padding-top: 16px;
+  padding-left: 13em;
   align-items: center;
 
   em {
@@ -160,7 +161,8 @@ function switchTheme(e) {
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
   </div>
-  
+</div>
+
 <div class="theme-switch-wrapper">
     <label class="theme-switch" for="checkbox">
         <input type="checkbox" id="checkbox" />
@@ -168,6 +170,5 @@ function switchTheme(e) {
   </label>
   <em>Switch theme</em>
 </div>
-
 </body>
 </html>
