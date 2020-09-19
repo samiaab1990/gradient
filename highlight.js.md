@@ -28,7 +28,7 @@ permalink: /highlight.js/
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-light.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-  <pre><code>
+  <pre><code class="language-html">
   <!DOCTYPE html>
 <title>Title</title>
 
