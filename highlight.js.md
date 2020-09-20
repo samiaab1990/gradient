@@ -43,7 +43,7 @@ permalink: /highlight.js/
 background: -webkit-linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-    border: solid 1px -webkit-linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    border: solid 1px;
 }
 
 .theme-switch-wrapper {
@@ -91,7 +91,7 @@ background: -webkit-linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%)
 }
 
 input:checked + .slider {
-  background-color: #66bb6a;
+  background: -webkit-linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
 }
 
 input:checked + .slider:before {
