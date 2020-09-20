@@ -40,8 +40,10 @@ permalink: /highlight.js/
 }
 
 .btn:hover {
-    color:#2EBAAE; 
-    border: solid 1px #2EBAAE;
+background: -webkit-linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    border: solid 1px;
 }
 
 .theme-switch-wrapper {
