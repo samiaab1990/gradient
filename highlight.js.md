@@ -124,14 +124,25 @@ input:checked + .slider:before {
 <script>hljs.initHighlightingOnLoad();</script>
 
 
-  <pre><code id="code">
+  <pre id="code">
 # Select language to preview highlighting 
-  </code></pre>
+  </pre>
 </div>
 
 <script>
 function python(){
-document.getElementById("code").innerHTML = "# python";
+document.getElementById("code").innerHTML = "<code> @requires_authorization
+def somefunc(param1='', param2=0):
+    r'''A docstring'''
+    if param1 > param2: # interesting
+        print 'Gre\'ater'
+    return (param2 - param1 + 1 + 0b10l) or None
+
+class SomeClass:
+    pass
+
+>>> message = '''interpreter
+... prompt''' </code>";
 }
 
 </script>
