@@ -43,7 +43,7 @@ permalink: /highlight.js/
 background: -webkit-linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-    border: solid 1px;
+    border: solid 1px -webkit-linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
 }
 
 .theme-switch-wrapper {
@@ -156,7 +156,7 @@ function switchTheme(e) {
         <input type="checkbox" id="checkbox" />
         <div class="slider round"></div>
   </label>
-  <em>Switch theme</em>
+  <p style='font-size:10px; color:#9c9c9c'>switch theme</p>
 </div>
 </body>
 </html>
