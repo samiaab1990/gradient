@@ -3,18 +3,18 @@ layout: page
 title: Highlight.js Themes
 permalink: /highlight.js/
 ---
-<link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-light.min.css">
-      
+
  <link rel="stylesheet2"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-dark.min.css">
       
-<link 
-  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
-  rel="stylesheet"  type='text/css'>
+
 
 <html>
 <head>
+
+<link 
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
 <style>
 
 .btn {
@@ -121,8 +121,17 @@ input:checked + .slider:before {
 
 <div class="myDiv">
 
+:root {
+   --style:gradient-light
+}
+
+[data-theme="dark"] {
+--style:gradient-dark
+}
+
 <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-light.min.css">
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/var(--style).min.css">
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
@@ -133,16 +142,18 @@ input:checked + .slider:before {
 </div>
 
 <script>
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
 function switchTheme(e) {
     if (e.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark'); //add this
     }
     else {
         document.documentElement.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light'); //add this
     }    
 }
+
+toggleSwitch.addEventListener('change', switchTheme, false);
 </script>
 
 <div>
