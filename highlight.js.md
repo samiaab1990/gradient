@@ -36,8 +36,7 @@ permalink: /highlight.js/
 
 .btn:hover {
 background: -webkit-linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color:#ffffff;
     border: solid 1px;
 }
 
