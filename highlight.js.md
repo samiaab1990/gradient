@@ -141,7 +141,7 @@ input:checked + .slider:before {
         <input type="checkbox" id="checkbox" />
         <div class="slider round"></div>
   </label>
-  <p id="switch_label" style='font-size:10px; color:#9c9c9c'></p>
+  <p id="switch_label" style='font-size:10px; color:#9c9c9c'>gradient light</p>
   
   <script>
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
