@@ -4,11 +4,7 @@ title: Highlight.js Themes
 permalink: /highlight.js/
 ---
 
- <link rel="stylesheet2"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-dark.min.css">
-      
-
-
+ 
 <html>
 <head>
 <style>
@@ -126,20 +122,6 @@ input:checked + .slider:before {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script>
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-function switchTheme(e) {
-    if (e.target.checked) {
-        document.getElementById("js_css").setAttribute("href", "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-dark.min.css");
-    }
-    else {
-        document.getElementById("js_css").setAttribute("href", "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-light.min.css");
-    }    
-}
-
-toggleSwitch.addEventListener('change', switchTheme, false);
-</script>
 
   <pre><code>
 #Test 
@@ -160,6 +142,21 @@ toggleSwitch.addEventListener('change', switchTheme, false);
         <div class="slider round"></div>
   </label>
   <p style='font-size:10px; color:#9c9c9c'>switch theme</p>
+  <script>
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.getElementById("js_css").setAttribute("href", "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-dark.min.css");
+    }
+    else {
+        document.getElementById("js_css").setAttribute("href", "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-light.min.css");
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+</script>
+
 </div>
 </body>
 </html>
