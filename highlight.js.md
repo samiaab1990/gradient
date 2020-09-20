@@ -63,7 +63,7 @@ background: -webkit-linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%)
 }
 
 .slider {
-  background-color: #ccc;
+  background-color: #9c9c9c;
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -124,7 +124,7 @@ input:checked + .slider:before {
 
 
   <pre><code>
-#Test 
+# Select language to preview highlighting 
   </code></pre>
 </div>
 
