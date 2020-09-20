@@ -124,9 +124,9 @@ input:checked + .slider:before {
 <script>hljs.initHighlightingOnLoad();</script>
 
 
-  <pre id="code">
+  <pre><code id="code">
 # Select language to preview highlighting 
-  </pre>
+  </code></pre>
 </div>
 
 
