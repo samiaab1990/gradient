@@ -115,13 +115,7 @@ input:checked + .slider:before {
   
 }
 
-:root {
-   --style:gradient-light
-}
 
-[data-theme="dark"] {
---style:gradient-dark
-}
 </style>
 </head>
 
@@ -130,7 +124,7 @@ input:checked + .slider:before {
 <div class="myDiv">
 
 <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/var(--style).min.css">
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-light.min.css" id="js_css">
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
@@ -144,14 +138,17 @@ input:checked + .slider:before {
 <script>
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
+function swapStyleSheet(sheet) {
+    document.getElementById("js_css").setAttribute("href", sheet);  
+}
 function switchTheme(e) {
     if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
+        function () { swapStyleSheet("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-dark.min.css") }
     }
     else {
-        document.documentElement.setAttribute('data-theme', 'light');
+         function () { swapStyleSheet("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-light.min.css") }
+    }
     }    
-}
 
 toggleSwitch.addEventListener('change', switchTheme, false);
 </script>
