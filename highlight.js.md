@@ -141,16 +141,19 @@ input:checked + .slider:before {
         <input type="checkbox" id="checkbox" />
         <div class="slider round"></div>
   </label>
-  <p style='font-size:10px; color:#9c9c9c'>switch theme</p>
+  <p id="switch_label" style='font-size:10px; color:#9c9c9c'></p>
+  
   <script>
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
 function switchTheme(e) {
     if (e.target.checked) {
         document.getElementById("js_css").setAttribute("href", "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-dark.min.css");
+        document.getElementById("switch_label").innerHTML = "gradient dark";
     }
     else {
         document.getElementById("js_css").setAttribute("href", "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-light.min.css");
+        document.getElementById("switch_label").innerHTML = "gradient light";
     }    
 }
 
