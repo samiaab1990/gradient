@@ -11,10 +11,6 @@ permalink: /highlight.js/
 
 <html>
 <head>
-
-<link 
-  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
-  rel="stylesheet"  type='text/css'>
 <style>
 
 .btn {
@@ -130,11 +126,6 @@ input:checked + .slider:before {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-  <pre><code>
-#Test 
-  </code></pre>
-</div>
-
 <script>
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
@@ -152,6 +143,11 @@ function switchTheme(e) {
 
 toggleSwitch.addEventListener('change', switchTheme, false);
 </script>
+
+  <pre><code>
+#Test 
+  </code></pre>
+</div>
 
 <div>
   <button class="btn">Python<i class="fab fa-python"></i></button>
