@@ -7,6 +7,7 @@ permalink: /highlight.js/
  
 <html>
 <head>
+<script src="https://kit.fontawesome.com/5c0609df7f.js" crossorigin="anonymous"></script>
 <style>
 
 .btn {
@@ -123,13 +124,29 @@ input:checked + .slider:before {
 <script>hljs.initHighlightingOnLoad();</script>
 
 
-  <pre><code>
+  <pre><code id="code">
 # Select language to preview highlighting 
   </code></pre>
 </div>
 
+<script>
+function python(){
+document.getElementById("code").innerHTML = "@requires_authorization
+def somefunc(param1='', param2=0):
+    r'''A docstring'''
+    if param1 > param2: # interesting
+        print 'Gre\'ater'
+    return (param2 - param1 + 1 + 0b10l) or None
+
+class SomeClass:
+    pass
+>>> message = '''interpreter
+... prompt''';"
+}
+
+</script>
 <div>
-  <button class="btn">Python<i class="fab fa-python"></i></button>
+  <button class="btn" onclick="python()">Python<i class="fab fa-python"></i></button>
   <button class="btn">R<i class="fab fa-r-project"></i></button>
   <button class="btn">JavaScript<i class="fab fa-js-square"></i></button>
   <button class="btn">HTML<i class="fas fa-code"></i></button>
