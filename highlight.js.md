@@ -129,17 +129,14 @@ input:checked + .slider:before {
 <script>
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
-function swapStyleSheet(sheet) {
-    document.getElementById("js_css").setAttribute("href", sheet);  
-}
 function switchTheme(e) {
     if (e.target.checked) {
-        function () { swapStyleSheet("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-dark.min.css") }
+        document.getElementById("js_css").setAttribute("href", "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-dark.min.css");
     }
     else {
-         function () { swapStyleSheet("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-light.min.css") }
-    }
+        document.getElementById("js_css").setAttribute("href", "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/gradient-light.min.css");
     }    
+}
 
 toggleSwitch.addEventListener('change', switchTheme, false);
 </script>
