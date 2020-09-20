@@ -15,56 +15,44 @@ permalink: /highlight.js/
 <head>
 <style>
 
-/* Dropdown Button */
-.dropbtn {
-  background-color: #9C9C9C;
-  color: white;
-  padding: 16px;
-  font: 12px/1.4 Helvetica, Arial, sans-serif;
-  border: none;
+.btn {
+  border-radius: 3px;
+  background:transparent;
+   border: solid 1px #9c9c9c;
+   color: #9c9c9c;
+   display: inline-block;
+   font-family: "Raleway", Helvetica, sans-serif;
+   font-size: .7em !important;
+   font-weight: 800;
+   height: 1.5em;
+   letter-spacing: 0em;
+   line-height: 1.5em;
+   margin: auto;
+   padding: 0 .6em;
+   -moz-transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
+   -webkit-transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
+   -ms-transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
+   transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
+   text-align: center;
+   text-transform: capitalize;
+   width: fit-content;
+   background-color:transparent;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
+.btn:hover {
+    color:#2EBAAE; 
+    border: solid 1px #2EBAAE;
 }
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 .theme-switch-wrapper {
   display: inline-block;
-  padding-top: 16px;
+  padding-top: 0px;
+  padding-left:25em;
   align-items: center;
 
   em {
     margin-left: 10px;
-    font-size: 1rem;
+    font-size: 10px;
   }
 }
 .theme-switch {
@@ -153,13 +141,12 @@ function switchTheme(e) {
 }
 </script>
 
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
+<div>
+  <button class="btn">Python<i class="fab fa-python"></i></button>
+  <button class="btn">R<i class="fab fa-r-project"></i></button>
+  <button class="btn">JavaScript<i class="fab fa-js-square"></i></button>
+  <button class="btn">HTML<i class="fas fa-code"></i></button>
+  <button class="btn">CSS<i class="far fa-file-code"></i></button>
 </div>
 
 <div class="theme-switch-wrapper">
