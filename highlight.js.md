@@ -114,12 +114,6 @@ input:checked + .slider:before {
   border: 1 px solid #3D3D3E;
   
 }
-</style>
-</head>
-
-<body>
-
-<div class="myDiv">
 
 :root {
    --style:gradient-light
@@ -128,6 +122,12 @@ input:checked + .slider:before {
 [data-theme="dark"] {
 --style:gradient-dark
 }
+</style>
+</head>
+
+<body>
+
+<div class="myDiv">
 
 <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/var(--style).min.css">
